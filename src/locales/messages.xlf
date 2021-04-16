@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="fr" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="title-slide1" datatype="html">
+        <source>Propagation de la maladie</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accueil/accueil.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <note priority="1" from="description">propagation</note>
+        <note priority="1" from="meaning">title1</note>
+      </trans-unit>
+      <trans-unit id="title-slide2" datatype="html">
+        <source>Vaccination</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accueil/accueil.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <note priority="1" from="description">vaccin</note>
+        <note priority="1" from="meaning">title2</note>
+      </trans-unit>
+      <trans-unit id="title-slide3" datatype="html">
+        <source>La prévention</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accueil/accueil.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+        <note priority="1" from="description">prevention</note>
+        <note priority="1" from="meaning">title3</note>
+      </trans-unit>
+      <trans-unit id="title-slide4" datatype="html">
+        <source>Suivi des tests</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accueil/accueil.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+        <note priority="1" from="description">test</note>
+        <note priority="1" from="meaning">title4</note>
+      </trans-unit>
+      <trans-unit id="oms-link-slide" datatype="html">
+        <source>https://www.who.int/fr</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accueil/accueil.component.html</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="title-slide" datatype="html">
+        <source>OMS</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accueil/accueil.component.html</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="label5" datatype="html">
+        <source>OMS</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accueil/accueil.component.html</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="h2accueil" datatype="html">
+        <source>Évolution de la maladie</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accueil/accueil.component.html</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+        <note priority="1" from="description">titleaccueil</note>
+        <note priority="1" from="meaning">h2title</note>
+      </trans-unit>
+      <trans-unit id="maladie" datatype="html">
+        <source>Maladie</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <note priority="1" from="description">maladie</note>
+        <note priority="1" from="meaning">navlink</note>
+      </trans-unit>
+      <trans-unit id="vaccin" datatype="html">
+        <source>Vaccin</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <note priority="1" from="description">vaccin</note>
+        <note priority="1" from="meaning">navlink</note>
+      </trans-unit>
+      <trans-unit id="prev" datatype="html">
+        <source>Prévention</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <note priority="1" from="description">prev</note>
+        <note priority="1" from="meaning">navlink</note>
+      </trans-unit>
+      <trans-unit id="test" datatype="html">
+        <source>Test</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <note priority="1" from="description">test</note>
+        <note priority="1" from="meaning">navlink</note>
+      </trans-unit>
+      <trans-unit id="oms-link" datatype="html">
+        <source>https://www.who.int/fr</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="title" datatype="html">
+        <source>OMS</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="text" datatype="html">
+        <source>OMS</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inputtitle" datatype="html">
+        <source> Prendre un rendez-vous </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/vaccin/vaccin.component.html</context>
+          <context context-type="linenumber">5,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inputname" datatype="html">
+        <source>Nom</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/vaccin/vaccin.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inputsurname" datatype="html">
+        <source>Prénom</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/vaccin/vaccin.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inputtel" datatype="html">
+        <source>Telephone</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/vaccin/vaccin.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inputemail" datatype="html">
+        <source>Courriel</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/vaccin/vaccin.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inputsubmit" datatype="html">
+        <source>Confirmer</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/vaccin/vaccin.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

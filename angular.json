@@ -4,16 +4,24 @@
   "newProjectRoot": "projects",
   "projects": {
     "vaccine-app": {
+
+
       "projectType": "application",
       "schematics": {},
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale": "fr",
+        "locales": {
+          "en": "src/locales/messages.en.xlf"
+          }
+        },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/vaccine-app",
+            "outputPath": "dist/",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -24,11 +32,24 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/custom-theme.scss",
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.slim.min.js",
+              "node_modules/popper.js/dist/umd/popper.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
+            "en": {
+              "localize": ["en"]
+
+            },
+            "fr": {
+              "localize": ["fr"]
+            },
             "production": {
               "fileReplacements": [
                 {
@@ -66,6 +87,12 @@
           "configurations": {
             "production": {
               "browserTarget": "vaccine-app:build:production"
+            },
+            "fr": {
+              "browserTarget": "vaccine-app:build:fr"
+            },
+            "en": {
+              "browserTarget": "vaccine-app:build:en"
             }
           }
         },

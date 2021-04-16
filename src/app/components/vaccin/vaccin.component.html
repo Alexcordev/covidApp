@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="feedback-form-container">
+    <mat-card class="feedback-form mat-elevation-z2">
+        <mat-card-title i18n="@@inputtitle">
+            Prendre un rendez-vous
+        </mat-card-title>
+        <mat-card-content>
+            <form [formGroup]="creationForm" (submit)="createAppointment()">
+                <mat-form-field class="full-width">
+                    <input i18n-placeholder="@@inputname" matInput placeholder="Nom" name="name" formControlName="name" required>
+                </mat-form-field>
+                <mat-form-field class="full-width">
+                  <input i18n-placeholder="@@inputsurname" matInput placeholder="Prénom" name="surname" formControlName="surname" required>
+
+              </mat-form-field>
+              <mat-form-field class="full-width">
+                <input i18n-placeholder="@@inputtel" matInput placeholder="Telephone" name="telephone" formControlName="telephone" required>
+
+            </mat-form-field>
+            <mat-form-field class="full-width">
+              <input i18n-placeholder="@@inputemail" matInput placeholder="Courriel" name="email" formControlName="email" required>
+
+          </mat-form-field>
+                <mat-card-actions align="right">
+                    <button i18n="@@inputsubmit" type="submit" mat-raised-button color="primary" [disabled]="creationForm.invalid">Confirmer</button>
+                </mat-card-actions>
+            </form>
+        </mat-card-content>
+    </mat-card>
+</div>
+
+</div>
+

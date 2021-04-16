@@ -1,0 +1,62 @@
+<!--Un titre sur les résultats des tests à travers le territoire.-->
+
+<!--table créée avec Angular/material avec données de getAll()-->
+
+<!--caractéristiques de la table:
+-traduction des titre des colonnes (clés fichier resultat.json)
+-pagination qui permet l’affichage de 2 ou 5 ou encore 15 lignes par page.
+-colonne avec fonctionnalité de tri
+-filtre permettant une recherche par mot clé.-->
+<div class="container-fluid">
+  <mat-form-field>
+    <mat-label>Filtre</mat-label>
+      <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Montréal" #input>
+  </mat-form-field>
+
+  <div class="mat-elevation-z8">
+    <table mat-table [dataSource]="dataSource" matSort matSortActive="created" matSortDisableClear matSortDirection="desc">
+
+      <!-- ID Column -->
+      <ng-container matColumnDef="adulte">
+        <th class="header" mat-header-cell *matHeaderCellDef mat-sort-header > Adultes </th>
+        <td class="row" mat-cell *matCellDef="let element"> {{element.adulte}} </td>
+      </ng-container>
+
+      <!-- Progress Column -->
+      <ng-container matColumnDef="aine">
+        <th class="header" mat-header-cell *matHeaderCellDef mat-sort-header> Ainés </th>
+        <td class="row" mat-cell *matCellDef="let element"> {{element.aine}} </td>
+      </ng-container>
+
+      <!-- Name Column -->
+      <ng-container matColumnDef="enfant">
+        <th class="header" mat-header-cell *matHeaderCellDef mat-sort-header> Enfants </th>
+        <td class="row" mat-cell *matCellDef="let element"> {{element.enfant}} </td>
+      </ng-container>
+
+      <!-- Color Column -->
+      <ng-container matColumnDef="localite">
+        <th class="header" mat-header-cell *matHeaderCellDef mat-sort-header> Localité </th>
+        <td class="row" mat-cell *matCellDef="let element"> {{element.localite}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="total">
+        <th class="header" mat-header-cell *matHeaderCellDef mat-sort-header> Total </th>
+        <td class="row" mat-cell *matCellDef="let element"> {{element.total}} </td>
+      </ng-container>
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+      <!-- Row shown when there is no matching data. -->
+      <tr class="mat-row" *matNoDataRow>
+        <td class="mat-cell" colspan="5">Aucune données trouvées "{{input.value}}"</td>
+      </tr>
+    </table>
+
+    <mat-paginator [pageSizeOptions]="[2, 5, 15]"></mat-paginator>
+  </div>
+</div>
+<!---Une liste non ordonnée avec chaque item qui contient le nom de la localité
+et le nombre de cas
+-Toutes les informations affichées dans cette pages (table et liste)
+s’ajustent automatiquement si les données changent.-->

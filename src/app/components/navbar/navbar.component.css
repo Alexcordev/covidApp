@@ -1,0 +1,28 @@
+.nav {
+  background-color: rgb(150, 0, 0);
+  position: fixed;
+  top:0;
+  color: #fff;
+  margin-bottom: 30px;
+  z-index: 99;
+}
+.nav-spacer {
+  flex: 1 1 auto;
+}
+
+.nav-locales {
+  display: flex;
+  column-gap: 5px;
+}
+
+.nav-locales li {
+  list-style: none;
+}
+.nav-link {
+  font-size: 15px;
+  font-weight: 200;
+  text-decoration: none;
+  margin-right: 5px;
+  color: #fff
+}
+

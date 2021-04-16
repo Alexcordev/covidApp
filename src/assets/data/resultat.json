@@ -1,0 +1,122 @@
+[
+  {
+  "localite": "Québec",
+  "total": "284",
+  "enfant": 23,
+  "adulte": "200",
+  "aine": "61"
+  },
+  {
+    "localite": "Montréal",
+    "total": "324",
+    "enfant": 40,
+    "adulte": "260",
+    "aine": "24"
+  },
+  {
+    "localite": "Longueuil",
+    "total": "126",
+    "enfant": 20,
+    "adulte": "80",
+    "aine": "26"
+  },
+  {
+    "localite": "Trois-Rivières",
+    "total": "82",
+    "enfant": 8,
+    "adulte": "70",
+    "aine": "4"
+  },
+  {
+    "localite": "Sherbrooke",
+    "total": "225",
+    "enfant": 7,
+    "adulte": "200",
+    "aine": "18"
+  },
+  {
+    "localite": "Joliette",
+    "total": "75",
+    "enfant": 5,
+    "adulte": "60",
+    "aine": "10"
+  },
+  {
+    "localite": "Drummondville",
+    "total": "35",
+    "enfant": 2,
+    "adulte": "30",
+    "aine": "3"
+  },
+  {
+    "localite": "Carleton",
+    "total": "24",
+    "enfant": 1,
+    "adulte": "20",
+    "aine": "3"
+  },
+  {
+    "localite": "Sept-Îles",
+    "total": "24",
+    "enfant": 0,
+    "adulte": "22",
+    "aine": "2"
+  },
+  {
+    "localite": "Mont-Tremblant",
+    "total": "15",
+    "enfant": 0,
+    "adulte": "14",
+    "aine": "1"
+  },
+  {
+    "localite": "St-Jérôme",
+    "total": "54",
+    "enfant": 3,
+    "adulte": "48",
+    "aine": "3"
+  },
+  {
+    "localite": "St-Hubert",
+    "total": "105",
+    "enfant": 7,
+    "adulte": "97",
+    "aine": "1"
+  },
+  {
+    "localite": "Lac St-Jean",
+    "total": "32",
+    "enfant": 2,
+    "adulte": "29",
+    "aine": "1"
+  },
+  {
+    "localite": "Rimouski",
+    "total": "43",
+    "enfant": 3,
+    "adulte": "37",
+    "aine": "3"
+  },
+  {
+    "localite": "St-Georges-De-Beauce",
+    "total": "14",
+    "enfant": 2,
+    "adulte": "10",
+    "aine": "2"
+  },
+  {
+    "localite": "St-Sauveur",
+    "total": "82",
+    "enfant": 3,
+    "adulte": "76",
+    "aine": "3"
+  },
+  {
+    "localite": "Rouyn-Noranda",
+    "total": "12",
+    "enfant": 1,
+    "adulte": "10",
+    "aine": "1"
+  }
+]
+
