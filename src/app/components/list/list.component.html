@@ -1,0 +1,28 @@
+<div class="main-container">
+  <div class="header">
+    <h3 i18n="@@listret1">Covid chez les enfants</h3>
+    <p i18n="@@listet2">Localités ayant le plus de cas</p>
+  </div>
+
+  <mat-card class=.mat-card>
+    <div class="list-box">
+      <mat-list class="list">
+        <mat-list-item *ngFor="let children of maxChildren">
+          <mat-divider></mat-divider>
+          <div class="list-box-items" i18n="@@listetcity">Localité:
+            <span class="badge badge-secondary">
+              {{ children.localite }}
+            </span>
+          </div>
+          <div class="list-box-items" i18n="@@listettotal">Nbre:
+            <span class="badge badge-pill badge-warning"> {{ children.enfant }}</span>
+          </div>
+          <div class="list-icon">
+            <mat-icon>arrow_upward</mat-icon>
+          </div>
+        </mat-list-item>
+
+      </mat-list>
+    </div>
+  </mat-card>
+</div>

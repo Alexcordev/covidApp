@@ -12,8 +12,8 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$vaccine-app-primary: mat-palette($mat-indigo);
-$vaccine-app-accent: mat-palette($mat-pink, A200, A100, A400);
+$vaccine-app-primary: mat-palette($mat-red);
+$vaccine-app-accent: mat-palette($mat-red, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
 $vaccine-app-warn: mat-palette($mat-red);
@@ -22,8 +22,8 @@ $vaccine-app-warn: mat-palette($mat-red);
 // theming systems such as "color" or "typography".
 $vaccine-app-theme: mat-light-theme((
   color: (
-    primary: $vaccine-app-primary,
-    accent: $vaccine-app-accent,
+    primary: $vaccine-app-warn,
+    accent: $vaccine-app-warn,
     warn: $vaccine-app-warn,
   )
 ));

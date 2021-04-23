@@ -8,7 +8,7 @@ import { VaccinComponent } from './components/vaccin/vaccin.component';
 import { PreventionComponent } from './components/prevention/prevention.component';
 
 const routes: Routes = [
-  { path: 'accueil', component: AccueilComponent },
+  { path: '', component: AccueilComponent },
   { path: 'maladie', component: MaladieComponent },
   { path: 'vaccin', component: VaccinComponent },
   { path: 'prevention', component: PreventionComponent },

@@ -1,36 +1,5 @@
-<!--Une barre de navigation horizontale en tête contenant :
-◦ Le nom (brand) abrégé de l’organisme (Ministère ou Hôpital)
-organisateur de la campagne de vaccination.
-
-◦ Les liens de navigation vers chacun des autres composants
-
-◦ Un lien permettant d’aller sur la version du site dans l’autre
-langue. Si le site est affiché en français, le lien permettra d’aller
-sur le site en anglais. Si le site est affiché en anglais, le lien
-permettra d’aller sur le site en français. Dans la mesure du
-possible, le site s’affichera par défaut en français. -->
-
-<!--Un conteneur (sélecteur) de routing, entre la barre de navigation
-et le pied de page, pour l’insertion des autres composants. -->
 <app-navbar></app-navbar>
-
-
-<!--<h1 i18n="main header|Friendly welcoming message@@welcome">Under Construction</h1>
-
-<p i18n="paragraph|text about covid@@infos">I really enjoy staying at home</p>-->
-
-<router-outlet></router-outlet>
-<!--Un pied de page contenant les informations suivantes disposées
-d’une manière appropriée et cohérente au design global du site.
-◦ Indication que ce site est développé dans le cadre du cours
-INF3190 à l’UQAM
-◦ Le(s) nom(s) du(de la) développeur (euse).
-◦ Le nom du (de la) développeur (euse) aura un lien permettant
-de lui envoyer un courriel.
-◦ Le mot UQAM aura un lien : http://www.uqam.ca.
-◦ Le mot INF3190 aura aussi un lien : http://www.etudier.uqam.ca/cours?sigle=INF3190 -->
-
-
-<!--Selon la préférence, un et un seul élément au choix, entre la barre de
-navigation et le pied de page sera fixe. C’est-à-dire reste tout le temps
-à sa position même si on fait dérouler la page.-->
+<div class='content'>
+  <router-outlet></router-outlet>
+</div>
+<app-footer></app-footer>

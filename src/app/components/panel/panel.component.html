@@ -1,0 +1,122 @@
+<mat-accordion>
+  <mat-expansion-panel class="panel" [expanded]="step === 0" (opened)="setStep(0)">
+    <mat-expansion-panel-header>
+      <mat-panel-title i18n="@@panelt1">
+        Hygiène des mains
+      </mat-panel-title>
+      <mat-panel-description>
+
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <div class="panel-content">
+      <div>
+        <p i18n="@@panelp1">
+          Le maintien d'une bonne hygiène des mains et des voies respiratoires est une pratique personnelle
+          très importante qui aide à réduire le risque d'infection ou de propager une infection à d'autres.
+          Lavez-vous souvent les mains avec du savon et de l'eau tiède pendant au moins 20 secondes.
+          Si le savon et l'eau ne sont pas disponibles, utilisez un désinfectant pour les mains contenant au moins 60%
+          d'alcool.
+          Évitez de toucher vos yeux, votre nez ou votre bouche avec des mains non lavées.
+        </p>
+      </div>
+      <div>
+        <img src="../../../assets/images/washing-400px.jpg" class="responsive" i18n-alt="@@panimgalt1"
+          alt="lavage des mains">
+      </div>
+    </div>
+  </mat-expansion-panel>
+  <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title i18n="@@panelt2">
+        Distanciation physique
+      </mat-panel-title>
+      <mat-panel-description>
+
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <div class="panel-content">
+      <div>
+        <p i18n="@@panelp2">
+          Ensemble, nous pouvons ralentir la propagation du COVID-19 en faisant
+          un effort conscient pour garder une distance physique entre nous.
+          Il est prouvé que la distance physique est l'un des moyens les plus
+          efficaces de réduire la propagation de la maladie lors d'une épidémie.
+          Cela signifie apporter des changements à vos routines quotidiennes pour
+          minimiser les contacts étroits avec les autres
+        </p>
+      </div>
+      <div>
+        <img src="../../../assets/images/distanciation-400px.jpg" class="responsive" i18n-alt="@@panimgalt2"
+          alt="distanciation">
+      </div>
+    </div>
+  </mat-expansion-panel>
+  <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title i18n="@@panelt3">
+        Port du masque
+      </mat-panel-title>
+      <mat-panel-description>
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <div class="panel-content">
+      <div>
+        <p i18n="@@panelp3">
+          Alors que la transmission communautaire du COVID-19 se poursuit dans de nombreuses
+          régions du Canada et que de nouvelles variantes du virus COVID-19 sont identifiées
+          et circulent, il demeure important que vous portiez un masque non médical.
+          Les masques non médicaux doivent être bien construits, bien ajustés, correctement portés
+          et constitués de plusieurs couches.
+        </p>
+      </div>
+      <div>
+        <img src="../../../assets/images/girl-400px.jpg" class="responsive" i18n-alt="@@panimgalt3" alt="masques">
+      </div>
+    </div>
+  </mat-expansion-panel>
+  <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title i18n="@@panelt4">
+        Ventilation
+      </mat-panel-title>
+      <mat-panel-description>
+
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <div class="panel-content">
+      <div>
+        <p i18n="@@panelp4">
+          Une bonne ventilation intérieure fait partie de la prévention de la propagation du COVID-19.
+        </p>
+      </div>
+      <div>
+        <img src="../../../assets/images/ventilation-400px.jpg" class="responsive" i18n-alt="@@panimgalt4"
+          alt="ventilation">
+      </div>
+    </div>
+  </mat-expansion-panel>
+  <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title i18n="@@panelt5">
+        Nettoyage et désinfection
+      </mat-panel-title>
+      <mat-panel-description>
+
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <div class="panel-content">
+      <div>
+        <p i18n="@@panelp5">
+          Le virus COVID-19 est le plus susceptible de se trouver sur des surfaces
+          que vous touchez fréquemment avec vos mains. Nettoyez et désinfectez les
+          surfaces au toucher élevé pour réduire le risque de propagation du COVID-19
+          dans votre maison, votre lieu de travail et les espaces publics.
+        </p>
+      </div>
+      <div>
+        <img src="../../../assets/images/desinfection-400px.jpg" class="responsive" i18n-alt="@@panimgalt5"
+          alt="nettoyage">
+      </div>
+    </div>
+  </mat-expansion-panel>
+</mat-accordion>

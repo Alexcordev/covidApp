@@ -1,0 +1,16 @@
+<div class="backdrop" (click)="onClose()"></div>
+<div class="alert-box">
+
+  <div class="header">
+    <p i18n="@@alertgreetings">Merci {{ message }}</p>
+  </div>
+  <div class="alert-text">
+    <p i18n="@@alerttext">Nous avons bien reçu vos coordonnées.<br>
+      Vous recevrez sous peu un courriel avec votre date de vaccination
+    </p>
+  </div>
+
+  <div class="alert-box-actions">
+    <button class="alert-btn" (click)="onClose()" i18n="@@alertbtnclose">Fermer</button>
+  </div>
+</div>

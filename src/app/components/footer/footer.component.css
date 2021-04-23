@@ -1,0 +1,37 @@
+mat-icon {
+  vertical-align: middle;
+}
+
+a {
+  color: #ff4b4b;
+}
+
+.footer-content {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-box {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-text {
+  color: #dbdbdb;
+}
+
+@media screen and (max-width: 800px) {
+  .footer-content {
+    font-size: 14px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  mat-icon {
+    display: none;
+  }
+}

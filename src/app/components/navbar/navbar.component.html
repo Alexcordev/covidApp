@@ -1,32 +1,47 @@
-<!--Le nom (brand) abrégé de l’organisme (Ministère ou Hôpital)
-organisateur de la campagne de vaccination.
-◦ Les liens de navigation vers chacun des autres composants
-◦ Un lien permettant d’aller sur la version du site dans l’autre
-  langue francais/anglais default: francais.  position fixe. -->
-  <header>
-    <mat-toolbar class="nav">
-      <mat-toolbar-row>
-        <span>CHUM</span>
-        <button [routerLink]="['accueil']" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-          <mat-icon>home</mat-icon>
-        </button>
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <span><mat-icon>looks</mat-icon></span>
+  <a class="navbar-brand" href="#"> &nbsp;CHUM</a>
+  <button class="navbar-toggler mr-1" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" [routerLink]="['']" i18n="navlink|accueil@@accueil">Accueil <span
+            class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" [routerLink]="['maladie']" i18n="navlink|maladie@@maladie">Maladie</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" [routerLink]="['vaccin']" i18n="navlink|vaccin@@vaccin">Vaccin</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" [routerLink]="['prevention']" i18n="navlink|prev@@prev">Prévention</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" [routerLink]="['test']" i18n="navlink|test@@test">Test</a>
-        <a class="nav-link" i18n="@@text" i18n-href="@@oms-link" i18n-title="@@title" href="https://www.who.int/fr" title="OMS" target="_blank">OMS</a>
-        <span class="nav-spacer"></span>
-        <ng-container>
-          <mat-icon>language</mat-icon>
-          <button mat-button [matMenuTriggerFor]="menu">
-              {{siteLanguage}}
-              <mat-icon>arrow_drop_down</mat-icon>
-          </button>
-          <mat-menu class="nav-menu" #menu="matMenu">
-              <a mat-menu-item href="/fr">Français</a>
-              <a mat-menu-item href="/en">English</a>
-         </mat-menu>
-      </ng-container>
-      </mat-toolbar-row>
-     </mat-toolbar>
-  </header>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" i18n="@@text" i18n-href="@@oms-link" i18n-title="@@title" href="https://www.who.int/fr"
+          title="OMS" target="_blank">OMS</a>
+      </li>
+    </ul>
+
+    <ul class="navbar-nav mr-1">
+      <li class="nav-item">
+        <span class="nav-link">
+          <span><mat-icon class="icon-language">language</mat-icon></span>
+        </span>
+      </li>
+      <li class="nav-item" *ngFor="let locale of localesList">
+        <a class="nav-link" href="/{{locale.code}}/">
+          {{locale.label}}
+        </a>
+      </li>
+    </ul>
+
+  </div>
+</nav>

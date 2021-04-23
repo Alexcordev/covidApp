@@ -1,8 +1,8 @@
-[
+ [
   {
   "localite": "Québec",
   "total": "284",
-  "enfant": 23,
+  "enfant": 40,
   "adulte": "200",
   "aine": "61"
   },
@@ -16,14 +16,14 @@
   {
     "localite": "Longueuil",
     "total": "126",
-    "enfant": 20,
+    "enfant": 40,
     "adulte": "80",
     "aine": "26"
   },
   {
     "localite": "Trois-Rivières",
     "total": "82",
-    "enfant": 8,
+    "enfant": 14,
     "adulte": "70",
     "aine": "4"
   },
@@ -37,7 +37,7 @@
   {
     "localite": "Joliette",
     "total": "75",
-    "enfant": 5,
+    "enfant": 40,
     "adulte": "60",
     "aine": "10"
   },

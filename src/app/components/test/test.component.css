@@ -1,24 +1,19 @@
-.container-fluid {
-  margin: 80px auto auto auto;
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
+  margin-top: 0 20px;
 }
 
-table {
-  width: 100%;
 
-}
+@media screen and (max-width: 600px) {
 
-.mat-form-field {
-  font-size: 14px;
-  width: 100%;
-}
+  .main-container {
+    width: 95%;
+    margin: auto;
+    margin-top: 20px;
+  }
 
-.header {
-  background-color: #ccc;
-  font-size: 16px;
-}
 
-.row {
-  color: #333;
-  font-size: 16px;
 }

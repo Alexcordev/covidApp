@@ -1,0 +1,54 @@
+  <h3 i18n="@@tablet1">Résultat des tests</h3>
+  <mat-form-field>
+
+    <mat-label i18n="@@testfilter">Filtre</mat-label>
+    <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Montréal" #input>
+  </mat-form-field>
+
+  <div class="mat-elevation-z8">
+
+    <table mat-table [dataSource]="dataSource" matSort matSortActive="created" matSortDisableClear
+      matSortDirection="desc">
+
+
+      <ng-container matColumnDef="localite">
+        <th i18n="@@headerlocal" class="header width-25" mat-header-cell *matHeaderCellDef mat-sort-header> Localité
+        </th>
+        <td class="table-locality width-25" mat-cell *matCellDef="let element"> {{element.localite}} </td>
+      </ng-container>
+
+
+      <ng-container matColumnDef="total">
+        <th i18n="@@headertotal" class="header width-25" mat-header-cell *matHeaderCellDef mat-sort-header> Total </th>
+        <td class="table-row width-25" mat-cell *matCellDef="let element"> {{element.total}} </td>
+      </ng-container>
+
+
+      <ng-container matColumnDef="enfant">
+        <th i18n="@@headerkids" class="header width-25" mat-header-cell *matHeaderCellDef mat-sort-header> Enfants </th>
+        <td class="table-row width-25" mat-cell *matCellDef="let element"> {{element.enfant}} </td>
+      </ng-container>
+
+
+      <ng-container matColumnDef="adulte">
+        <th i18n="@@headeradults" class="header width-25" mat-header-cell *matHeaderCellDef mat-sort-header> Adultes
+        </th>
+        <td class="table-row width-25" mat-cell *matCellDef="let element"> {{element.adulte}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="aine">
+        <th i18n="@@headeraolders" class="header width-25" mat-header-cell *matHeaderCellDef mat-sort-header> Ainés
+        </th>
+        <td class="table-row width-25" mat-cell *matCellDef="let element"> {{element.aine}} </td>
+      </ng-container>
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+
+      <tr class="mat-row" *matNoDataRow>
+        <td i18n="@@infosmess" class="mat-cell" colspan="5">Aucune données trouvées "{{input.value}}"</td>
+      </tr>
+    </table>
+
+    <mat-paginator [pageSizeOptions]="[2, 5, 15]" i18n="@@testpaginator"></mat-paginator>
+  </div>

@@ -1,9 +1,100 @@
-<!-- affiche un titre, des informations générales sur maladie visée et une vidéo
-sur le sujet, intégrée (iframe) à partir de Youtube (ex : https://ww
-w.youtube.com/watch?v=i0ZabxXmH4Y). La vidéo affichée sera
-différente selon la langue affichée (pour symboliser le fait que la vidéo
-et spécifique à cette langue).-->
+<div class="container-maladie">
 
-<div class="container">
-  <p>maladie works!</p>
+  <div class="header-text">
+    <h1 i18n="@@maladietitle1">Symptômes de la COVID‑19 </h1>
+    <p i18n="@@maladiep1">Les symptômes de la COVID‑19 peuvent varier d’une personne à l’autre. Ils peuvent aussi varier
+      en fonction du
+      groupe d’âge.<br><br>
+      Voici quelques‑uns des symptômes les plus fréquemment signalés :
+    </p>
+  </div>
+  <div class="text-box">
+
+    <div class="box-1">
+
+      <mat-list class="list-box" role="list">
+        <mat-list-item class="list-item" role="listitem" i18n="@@maladieitem1">apparition ou aggravation de toux
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item class="list-item" role="listitem" i18n="@@maladieitem2">essoufflement ou difficulté respiratoire
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item class="list-item" role="listitem" i18n="@@maladieitem3">température égale ou supérieure à
+          38&nbsp;°C</mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item class="list-item" role="listitem" i18n="@@maladieitem4">sensation de fièvre</mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item class="list-item" role="listitem" i18n="@@maladieitem5">fatigue ou faiblesse</mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item class="list-item" role="listitem" i18n="@@maladieitem6">douleurs musculaires ou courbatures
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item class="list-item" role="listitem" i18n="@@maladieitem7">perte de l’odorat ou du goût
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item class="list-item" role="listitem" i18n="@@maladieitem8">mal de tête</mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item class="list-item" role="listitem" i18n="@@maladieitem9">symptômes gastro‑intestinaux
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item class="list-item" role="listitem" i18n="@@maladieitem10">malaises intenses</mat-list-item>
+        <mat-divider></mat-divider>
+      </mat-list>
+    </div>
+    <div data-aos="fade-left" data-aos-offset="100" data-aos-delay="100" data-aos-duration="1000"
+      data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false" class="aside">
+      <img class="img" src="../../../assets/images/fever.png" alt="symptoms">
+    </div>
+
+  </div>
+
+  <div class="text-box-children">
+
+    <h2 i18n="@@maladietitle2">Chez les enfants...</h2>
+    <mat-divider></mat-divider>
+    <div data-aos="fade-left" data-aos-offset="100" data-aos-delay="100" data-aos-duration="1000"
+      data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false" class="aside">
+      <mat-card class="my-card">
+        <p i18n="@@maladiep2">
+          Les enfants ont tendance à présenter des symptômes abdominaux
+          et des éruptions ou changements cutanés.<br>
+          Les symptômes peuvent apparaître jusqu’à 14 jours après l’exposition
+          à la COVID‑19.
+        </p>
+        <div>
+          <iframe class="responsive" height="225" i18n i18n-src src="https://www.youtube-nocookie.com/embed/CXHBApr2RO8"
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+         encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+        </div>
+      </mat-card>
+    </div>
+    <mat-divider></mat-divider>
+  </div>
+  <div class="text-box-children">
+    <h2 class="children-title" i18n="@@maladietitre3">Aucun symptôme...</h2>
+    <mat-divider></mat-divider>
+    <div data-aos="fade-left" data-aos-offset="100" data-aos-delay="100" data-aos-duration="1000"
+      data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false" class="aside">
+
+      <mat-card class="my-card">
+        <div>
+          <p i18n="@@maladiep3">
+            Le virus peut être transmis par des personnes infectées qui ne présentent aucun symptôme.
+          </p>
+
+          <p i18n="@@maladiep4">
+            Ce type de propagation survient chez les personnes qui ont des contacts étroits ou qui sont dans des lieux
+            fermés
+            ou achalandés.
+          </p>
+        </div>
+        <div class="img-social">
+          <img src="../../../assets/images/distanciation-400px.jpg" width="400" height="auto" class="responsive"
+            alt="distance">
+        </div>
+      </mat-card>
+
+    </div>
+  </div>
 </div>
