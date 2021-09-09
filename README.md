@@ -1,27 +1,54 @@
-# VaccineApp
+## Travail effectué par Alexandre Cormier 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.8.
+## Code Permanent CORA29027606
 
-## Development server
+Ce projet a été réalisé avec [Angular CLI]
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+(https://github.com/angular/angular-cli) version 11.2.8.
 
-## Code scaffolding
+## Déployer l'application
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Télécharger le dossier de l'application et en faire une copie sur votre ordinateur.
 
-## Build
+Ensuite, ouvrez le dossier de l'application dans votre IDE préféré.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Une fois le dossier ouvert dans l'IDE, ouvrez le terminal et assurez-vous d'être à la racine du dossier et effectuer la commande suivante pour installer toutes les dépendances nécessaires au bon fonctionnement de l'app : 
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Utilisez le node package manager pour installer les dépendances
+```
+npm install;
+```
+Utilisez le node package manager pour effectuer les mises à jour (si nécessaire)
+```
+npm update;
+```
 
-## Running end-to-end tests
+## Démarrer l'application
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Toujours dans le dossier racine de l'application, taper la commande suivante dans le terminal pour démarrer le serveur angular sur le port par défaut qui est le 4200 :
 
-## Further help
+```
+ng serve --open
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Tester l'application
+
+Pour tester l'Affichage du site dans la langue française et anglaise, dans le terminal, assurez-vous d'être dans le dossier de l'application, il faut tout simplement taper la commande suivante :
+
+### Traduction anglaise
+```
+ng serve --configuration=en --open
+```
+
+### Traduction française
+```
+ng serve --configuration=fr --open
+```
+## Librairies additionnelles
+
+La librairie javascript AOS (Animation on scroll) a été utilisée pour l'animation d'images et de conteneurs sur certaines pages (utilisation autorisée par M. Tsheke).
+
+### Site de AOS
+
+https://michalsnik.github.io/aos/
